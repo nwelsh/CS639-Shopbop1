@@ -2,37 +2,26 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Route,
-  Redirect,
-  Switch,
+  Routes,
 } from "react-router-dom";
-import Choices from "./components/Choices";
-import Swipe from "./components/Swipe";
-import Welcome from "./components/Welcome";
+import Choices from "./Pages/Choices";
+import Swipe from "./Pages/Swipe";
+import Welcome from "./Pages/Welcome";
 
 const App = () => {
-  let routes;
-
-  routes = (
-    <Switch>
-      <Route path="/" exact>
-        <Welcome/>
-      </Route>
-
-      <Route path="/choices" exact>
-        <Choices/>
-      </Route>
-
-      <Route path="/swipe" exact>
-        <Swipe/>
-      </Route>
-
-      <Redirect to="/" />
-    </Switch>
-  );
-
   return (
     <Router>
-      {routes}
+      <Routes>
+        <Route path="/" element={<Welcome/>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/choices" element={<Choices/>} />
+      </Routes>
+
+      <Routes>
+        <Route path="/swipe" element={<Swipe/>} />
+      </Routes>
     </Router>
   );
 };

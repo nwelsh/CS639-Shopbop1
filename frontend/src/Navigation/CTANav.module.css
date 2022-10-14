@@ -1,0 +1,79 @@
+.ctaContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2vw;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw 0;
+    background:#F8F6F7;
+    user-select: none;
+}
+
+.dropdowns{
+    text-align: center;
+    cursor: pointer;
+}
+
+.dropdowns > p{
+    font-size:0.95vw;
+    display: inline-block;
+    margin:0 0.5vw;
+}
+
+.offer{
+    text-align: center;
+    vertical-align: middle;
+    font-size:0.8vw;
+    cursor: pointer;
+}
+
+.offer img{
+    width:15%;
+    vertical-align: middle;
+    padding: 0 0.2vw;
+}
+
+.cta{
+    cursor: pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta > p{
+   margin:0;
+   padding:0 0.5vw;
+   font-size:0.95vw;
+}
+
+.wishlist,
+.cart{
+    width:2.8vw;
+    height:2.8vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta img{
+    width:80%;
+    height:80%;
+    object-fit: contain;
+    transform: all ease-in-out 0.2s;
+    -webkit-transform: all ease-in-out 0.2s;
+    -moz-transform: all ease-in-out 0.2s;
+    -ms-transform: all ease-in-out 0.2s;
+    -o-transform: all ease-in-out 0.2s;
+}
+
+.wishlist:hover img,
+.cart:hover img{
+    width:100%;
+    height:100%;
+    transform: all ease-in-out 0.2s;
+    -webkit-transform: all ease-in-out 0.2s;
+    -moz-transform: all ease-in-out 0.2s;
+    -ms-transform: all ease-in-out 0.2s;
+    -o-transform: all ease-in-out 0.2s;
+}
+
